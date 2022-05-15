@@ -1,0 +1,17 @@
+Installing and Enabling Cockpit
+=> apt install cockpit
+=> systemctl enable --now cockpit.socket
+=> ufw allow 9090
+
+If firewalld is enabled
+
+=> firewall-cmd --add-service=cockpit --permanent
+=> firewall-cmd --reload
+
+If the Applications option is not available within the cockpit interface, it can be installed as follows:
+
+=> apt install cockpit-packagekit
+
+Virtualization allows multiple operating system instances to run simultaneously on a single computer system, with each system running inside its own virtual machine.
+
+=> apt install cockpit-machines

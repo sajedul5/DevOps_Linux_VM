@@ -1,0 +1,32 @@
+User-add
+
+=> adduser <username>
+
+User administrative privilege 
+
+=> usermod -a -G sudo <username>
+
+User switch
+
+=> su <username>
+
+User list
+
+=> compgen -u
+
+User Delete
+
+=> sudo deluser <username>
+
+Hostname Change
+
+=> hostname
+
+=> hostnamectl
+
+=> sudo hostnamectl set-hostname <hostname>
+
+=> exec bash
+
+=> cat /etc/hosts
+=> sudo vim /etc/hosts
